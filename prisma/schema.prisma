@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model adre_db {
+  id        Int       @id @default(autoincrement())
+  name      String    @db.VarChar
+  url       String
+  date_post DateTime? @db.Timestamptz(6)
+  type      String    @db.VarChar
+  img       String?   @db.VarChar
+}
+
+model news {
+  id    Int    @id @default(autoincrement())
+  title String @db.VarChar
+  desc  String @db.VarChar
+  url   String? @db.VarChar
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  message   String
+  createdAt DateTime @default(now())
+
+  @@map("contactMessage") // 🎯 يطابق الاسم الكابيتال اللي عملته
+}
