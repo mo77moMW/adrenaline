@@ -8,17 +8,21 @@ export default function GPACalculator() {
   const [semesterGpa, setSemesterGpa] = useState(null);
   const [cumulativeGpa, setCumulativeGpa] = useState(null);
 
-  const gradesMapping = {
+const gradesMapping = {
     'A+': 4.0,
-    A: 3.75,
-    'B+': 3.5,
-    B: 3.0,
+    'A': 3.75,
+    'A-': 3.5,
+    'B+': 3.25,
+    'B': 3.0,
+    'B-': 2.75,
     'C+': 2.5,
-    C: 2.0,
-    'D+': 1.5,
-    D: 1.0,
-    F: 0.0,
+    'C': 2.25,
+    'C-': 2.0,
+    'D+': 1.75,
+    'D': 1.5,
+    'F': 0.75
   };
+
 
   const handleCourseChange = (index, field, value) => {
     const updatedCourses = [...courses];

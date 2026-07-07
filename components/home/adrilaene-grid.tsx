@@ -37,7 +37,7 @@ export function AdrilaeneGrid() {
               {/* صف بطاقتين صغيرتين (بطاقة 3 و 4) */}
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="group relative overflow-hidden rounded-2xl border border-zinc-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 aspect-square">
-                  <img src="p14.JPEG" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="بنك الأسئلة" />
+                  <img src="p14.jpeg" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="بنك الأسئلة" />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-2xl border border-zinc-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 aspect-square">
