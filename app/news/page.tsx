@@ -6,7 +6,7 @@ export default async function NewsPage(){
     const dbstps =await prisma.news.findMany();
     return(
         <>
-        <Header />
+    
         <News initialNews={dbstps} />
         </>
     )

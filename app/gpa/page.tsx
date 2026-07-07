@@ -13,15 +13,18 @@ interface Course {
 }
 
 const gradesMapping: Record<string, number> = {
-  "A+": 4.0,
-  "A": 3.75,
-  "B+": 3.5,
-  "B": 3.0,
-  "C+": 2.5,
-  "C": 2.0,
-  "D+": 1.5,
-  "D": 1.0,
-  "F": 0.0,
+    'A+': 4.0,
+    'A': 3.75,
+    'A-': 3.5,
+    'B+': 3.25,
+    'B': 3.0,
+    'B-': 2.75,
+    'C+': 2.5,
+    'C': 2.25,
+    'C-': 2.0,
+    'D+': 1.75,
+    'D': 1.5,
+    'F': 0.75
 };
 
 export default function GPACalculatorPage() {
@@ -222,8 +225,7 @@ export default function GPACalculatorPage() {
 
   return (
     <div dir="rtl" className="flex flex-col min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 font-sans selection:bg-brand-purple/20">
-      {/* 1. Header Navigation */}
-      <Header />
+
 
       {/* Main Page Layout */}
       <main className="flex-grow py-12 px-4 md:px-12 mx-auto max-w-7xl w-full">
@@ -608,8 +610,7 @@ export default function GPACalculatorPage() {
         )}
       </main>
 
-      {/* 6. Footer Layout */}
-      <Footer />
+
     </div>
   );
 }

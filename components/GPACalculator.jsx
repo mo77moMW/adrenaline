@@ -1,13 +1,6 @@
 'use client';
 import { useState } from 'react';
 
-export default function GPACalculator() {
-  const [courses, setCourses] = useState([{ name: '', credit: 0, grade: '' }]);
-  const [previousGpa, setPreviousGpa] = useState('');
-  const [previousCredits, setPreviousCredits] = useState('');
-  const [semesterGpa, setSemesterGpa] = useState(null);
-  const [cumulativeGpa, setCumulativeGpa] = useState(null);
-
 const gradesMapping = {
     'A+': 4.0,
     'A': 3.75,
@@ -22,6 +15,15 @@ const gradesMapping = {
     'D': 1.5,
     'F': 0.75
   };
+  
+export default function GPACalculator() {
+  const [courses, setCourses] = useState([{ name: '', credit: 0, grade: '' }]);
+  const [previousGpa, setPreviousGpa] = useState('');
+  const [previousCredits, setPreviousCredits] = useState('');
+  const [semesterGpa, setSemesterGpa] = useState(null);
+  const [cumulativeGpa, setCumulativeGpa] = useState(null);
+
+
 
 
   const handleCourseChange = (index, field, value) => {

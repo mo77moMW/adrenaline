@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 
 
 const cairo = Cairo({
@@ -26,8 +28,15 @@ export default function RootLayout({
       // استبدلنا font-sans بـ cairo.className لضمان تطبيق الخط بدون تضارب
       className={`${cairo.className} h-full antialiased`}
     >
+      
+
       <body className="min-h-full flex flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
-        {children}
+        <Header />
+        <main className="flex-1 ">
+          {children}
+        </main>
+      <Footer />
+
       </body>
     </html>
   );

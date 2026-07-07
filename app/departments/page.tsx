@@ -96,8 +96,7 @@ export default function DepartmentsPage() {
 
   return (
     <div dir="rtl" className="flex flex-col min-h-screen bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
-      {/* 1. Header Navigation */}
-      <Header />
+
 
       {/* Main Page Layout */}
       <main className="flex-grow py-12 px-6 md:px-12 mx-auto max-w-7xl w-full">
@@ -267,8 +266,7 @@ export default function DepartmentsPage() {
         </div>
       )}
 
-      {/* 7. Footer Layout */}
-      <Footer />
+
     </div>
   );
 }

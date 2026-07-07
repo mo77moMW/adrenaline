@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
       {/* 1. رأس الصفحة والتنقل */}
-      <Header />
+      
 
       {/* المحتوى الرئيسي */}
       <main className="flex-grow">
@@ -43,7 +43,7 @@ export default async function Home() {
       </main>
 
       {/* 7. تذييل الصفحة (Footer) */}
-      <Footer />
+      
     </div>
   );
 }
